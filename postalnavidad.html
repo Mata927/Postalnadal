@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+  <head>
+        <title>Postal Nadal</title>
+        <link href="postal.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <span class="float">&#10054</span>
+        <span class="float">&#10054</span>
+        <span class="float">&#10054</span>
+        <span class="float">&#10054</span>
+        <span class="float">&#10054</span>
+        <span class="float">&#10054</span>
+        <span class="float">&#10054</span>
+        <span class="float">&#10054</span>
+        <span class="float">&#10054</span>
+        <span class="float">&#10054</span>
+        <span class="float">&#10054</span>
+        <span class="float">&#10054</span>
+        <span class="float">&#10054</span>
+        <span class="float">&#10054</span>
+        <span class="float">&#10054</span>
+        <span class="float">&#10054</span>
+        <span class="float">&#10054</span>
+        <span class="float">&#10054</span>
+        <span class="float">&#10054</span>
+        <span class="float">&#10054</span>
+        <span class="float">&#10054</span>
+        <span class="float">&#10054</span>
+        <span class="float">&#10054</span>
+        <span class="float">&#10054</span>
+        <span class="float">&#10054</span>
+        <span class="float">&#10054</span>
+        <span class="float">&#10054</span>
+        <span class="float">&#10054</span>
+
+        x x x x x x<br/>
+        x x x x x x<br/>
+        <script>
+            document
+            .querySelectorAll(".float")
+            .forEach((float) => {
+                float.style.top='-10%';
+
+                setInterval(() => {
+                incrementa(5 * Math.random());
+            }, 40);
+
+            let left = Math.random()*(0,100);
+            float.style.left=left+ '%';
+
+
+            function incrementa(quantitat){
+                let top = parseInt(float.style.top);
+               
+            float.style.top=top+quantitat+ "%";
+            if(top+quantitat >= 100)
+                float.style.top='-10%';
+    
+           
+            }
+            
+            });
+            
+
+
+            
+
+            
+            
+        </script>
+    </body>
+</html>
