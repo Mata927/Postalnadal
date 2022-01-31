@@ -1,6 +1,12 @@
 .float{
     position: fixed;
-    color: red;
-    font-size: 25px;
+    color: whitesmoke;
+    font-size: 30px;
+
+}
+body{
+    background-image: url("bosque.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
 
 }
